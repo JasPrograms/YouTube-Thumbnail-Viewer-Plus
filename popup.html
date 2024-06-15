@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Thumbnail Viewer</title>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .toggle-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1c1c1c;
+            border: 1px solid #444;
+            border-radius: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+            font-size: 16px;
+            color: white;
+        }
+        .toggle-button:hover {
+            background-color: #333;
+            border-color: #666;
+        }
+        .toggle-button svg {
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggle-thumbnail" class="toggle-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M10.585 10.587a2 2 0 0 0 2.829 2.828" />
+            <path d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87" />
+            <path d="M3 3l18 18" />
+        </svg>
+        Visibility
+    </button>
+    <script src="popup.js"></script>
+</body>
+</html>

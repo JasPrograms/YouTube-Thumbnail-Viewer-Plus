@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Thumbnail Viewer+",
+    "version": "1.2",
+    "description": "Chrome extension that displays the YouTube thumbnail of the video you are currently watching, and when clicking on the thumbnail gives a link to download it.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/watch*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "externally_connectable": {
+      "matches": ["*://*.youtube.com/*"]
+    }
+  }
+  
